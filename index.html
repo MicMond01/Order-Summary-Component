@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="Red Hat Display" href="(https://fonts.google.com/specimen/Red+Hat+Display)">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                position: absolute;
+                font-family: 'Red Hat Display', sans-serif;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                background-repeat:no-repeat;
+                background-image: url('images/pattern-background-desktop.svg');
+            }
+
+            main {
+                width: 18.4375rem;
+                border-radius: 25px;
+                background-color: white;
+                box-shadow: 0 0 2rem hsl(224, 23%, 55%);
+                
+            }
+            /* For mobile phones: */
+
+            @media only screen and (max-width: 375px){
+            body {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                font-family: 'Red Hat Display', sans-serif;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                background-repeat:no-repeat;
+                background-image: url('images/pattern-background-mobile.svg');
+            }
+            main {
+                height: 90%;
+                width: 90%; 
+                }
+            }
+            /* End for mobile phones: */
+
+            .display img {
+                position: relative;
+                max-width: 100%;
+                float: unset;
+                top: 0;
+                border-radius: 25px 25px 0 0;               
+            }
+            .main-body {
+                padding: 1.5rem;
+                text-align: center;
+                line-height: 25px;
+            }
+
+            h1 {
+                font-size: 18px;
+                padding-bottom: 1rem;
+            }
+            p {
+                font-size: 13px;
+                color: hsl(224, 23%, 55%);
+            }
+
+            .plan {
+                margin: 1rem 0;
+                border-radius: 15px;
+                background-color: hsl(225, 100%, 98%);
+                display: flex;
+                font-size: 10px;
+                align-items: center;
+                padding: 1rem;            
+            }
+            .plan img {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+            }
+
+            span {
+                line-height: 1.1rem;
+            }
+
+            .plan a {
+                padding-right: 5%;
+                margin-left: 30%;
+                display: inline;
+                justify-content: right;
+                align-items: center;
+                color: hsl(245, 75%, 52%);
+            }
+
+            button {
+                font-size: .6rem;
+                margin-top: .3rem;
+                border-style: none;
+                padding: .7rem 0;
+                width: 100%;
+                border-radius: 10px;
+                color: white;
+                background-color: hsl(245, 75%, 52%);
+                box-shadow: 0 .2rem 0.9rem hsl(224, 23%, 55%);
+            }
+
+            .cancel {
+                padding-top: .8rem;
+            }
+
+            .cancel p {
+                font-size: .6rem;
+            }
+            .cancel a {
+                text-decoration: none;
+                color: hsl(224, 23%, 55%);
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="display">
+                <img src="images/illustration-hero.svg" alt="Display picture">
+            </div>
+            <div class="main-body">
+                <h1>Order Summary</h1>
+                <p class="summary">You can listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+                <div class="plan">
+                    <img height="35" width="35" src="images/icon-music.svg" alt="music icon">
+                    <div class="label">
+                        <span> <strong>Annual Plan</strong></span>
+                        <span>$59.99/year</span>
+                    </div>
+                    <a href="#"><strong>Change</strong></a>
+                </div>
+
+                <div class="proceed-button">
+                    <button> <strong>Proceed to Payment</strong></button>
+                </div>
+
+                <div class="cancel">
+                <p><strong><a href="#">Cancel Order</a></strong></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
